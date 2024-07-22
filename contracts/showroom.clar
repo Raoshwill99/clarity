@@ -4,6 +4,7 @@
 ;; summary: A simple voting system to add candidates, cast votes, and determine the winner.
 ;; description: This smart contract allows adding candidates, casting votes, retrieving the total number of votes, and determining the winner based on the highest number of votes.
 
+
 (define-data-var candidates (map u256 (tuple (name string) (votes u256))))
 
 (define-read-only (get-candidates)
